@@ -1,0 +1,1 @@
+"""8. Construa uma função que receba 2 parâmetros, sendo 1) a distância percorrida por um veículo em uma viagem. 2) O consumo de combustível (em litros) gastos nesse trajeto. Calcule e retorne o consumo médio de combustível desta viagem."""def comb (distancia, combustivel):        consumo = float(distancia / combustivel)    print(consumo)    comb(1, 1)
