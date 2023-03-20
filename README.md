@@ -5,6 +5,7 @@
 The Professional Development Course on Fundamentals of Big Data and Data Science with Python available to students aims at developing skills related to data extraction and transformation using specific software, applying machine learning techniques, and generating information for decision making following quality procedures and technical standards.
 
 Class 1 - Intro
+
 Class 2 - Py Revision - Part 1
 Class 3 - Py Revision - Part 1
 Class 4 - Numpy
