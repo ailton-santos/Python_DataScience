@@ -1,6 +1,6 @@
-# DSPy_Fundamentals
-## Fundamentals of Big Data and Data Science with Python
-
+# BIG DTA & DATA SCIENCE - FUNDAMENTAL COURSE 
+## (Programs developed for Students)
+### Prof. Ailton Santos
 
 The Professional Development Course on Fundamentals of Big Data and Data Science with Python available to students aims at developing skills related to data extraction and transformation using specific software, applying machine learning techniques, and generating information for decision making following quality procedures and technical standards.
 
