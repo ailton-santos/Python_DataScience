@@ -1,4 +1,4 @@
-# BIG DTA & DATA SCIENCE - FUNDAMENTALS COURSE 
+# BIG DATA & DATA SCIENCE - FUNDAMENTALS COURSE 
 ## (Programs developed for Students)
 ### Prof. Ailton Santos
 
