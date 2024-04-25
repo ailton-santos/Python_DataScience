@@ -1,6 +1,5 @@
 # PYTHON FOR DATA SCIENCE  
-## (Programs developed for Students)
-### Prof. Ailton Santos
+### MEng. Ailton Santos
 
 The Professional Improvement Course Programming in Python for Data Science aims to develop programming skills using coding in the Python language, with a view to collecting, cleaning, organizing and transforming data and following good practices, procedures and standards.
 
