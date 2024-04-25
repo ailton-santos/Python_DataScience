@@ -1,8 +1,8 @@
-# BIG DATA & DATA SCIENCE - FUNDAMENTALS COURSE 
+# PYTHON FOR DATA SCIENCE  
 ## (Programs developed for Students)
 ### Prof. Ailton Santos
 
-The Professional Development Course on Fundamentals of Big Data and Data Science with Python available to students aims at developing skills related to data extraction and transformation using specific software, applying machine learning techniques, and generating information for decision making following quality procedures and technical standards.
+The Professional Improvement Course Programming in Python for Data Science aims to develop programming skills using coding in the Python language, with a view to collecting, cleaning, organizing and transforming data and following good practices, procedures and standards.
 
 - Intro
 - Py Revision - Part 1
@@ -16,6 +16,5 @@ The Professional Development Course on Fundamentals of Big Data and Data Science
 - Web Scraping
 - Web Scraping Automation
 - CSV Extration
-- Machine Learning Intro
 - Project 1 
 - Project 2
