@@ -46,6 +46,9 @@ print(f"O tempo médio da corrida do atleta é: {media}")
 print(f"O melhor tempo da corrida do atleta é: {melhor_tempo}")
 import numpy as np
 
+
+import numpy as np
+import statistcs as st
 def melhor_volta(corredores):
     melhor_corredor, melhor_volta = min(corredores.items(), key=lambda x: min(x[1]))
     return melhor_corredor, min(melhor_volta), melhor_volta.index(min(melhor_volta)) + 1
