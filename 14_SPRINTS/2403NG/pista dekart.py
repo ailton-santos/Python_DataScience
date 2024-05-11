@@ -44,28 +44,36 @@ melhor_tempo = min(tempo_atleta)
 # Exibindo os resultados
 print(f"O tempo médio da corrida do atleta é: {media}")
 print(f"O melhor tempo da corrida do atleta é: {melhor_tempo}")
+import numpy as np
 
-def melhor_volta_tempos(corredores):
-    melhor_corredor = None
-    melhor_volta = float('inf')
-    for corredor, tempos in corredores.items():
-        volta_mais_rapida = min(tempos)
-        if volta_mais_rapida < melhor_volta:
-            melhor_corredor = corredor
-            melhor_volta = volta_mais_rapida
-    return melhor_corredor, melhor_volta
+
+import numpy as np
+import statistcs as st
+def melhor_volta(corredores):
+    melhor_corredor, melhor_volta = min(corredores.items(), key=lambda x: min(x[1]))
+    return melhor_corredor, min(melhor_volta), melhor_volta.index(min(melhor_volta)) + 1
+
+def volta_media_rapida(corredores):
+    tempos_por_volta = {volta: np.mean([corredores[corredor][volta - 1] for corredor in corredores]) for volta in range(10)}
+    return min(tempos_por_volta, key=tempos_por_volta.get), min(tempos_por_volta.values())
+
+def main():
+    corredores = {}
+    nomes_corredores = ["tiago", "thaisa", "ale", "gabriel", "tom", "franci"]
+    
     for nome in nomes_corredores:
-        tempos = []
-        print(f"Digite os tempos das 10 voltas para o corredor {nome}:")
-        for volta in range(1, 11):
-            tempo = float(input(f"Digite o tempo da {volta}ª volta (em segundos): "))
-            tempos.append(tempo)
+        tempos = [float(input(f"Digite o tempo da {volta}ª volta (em segundos) para o corredor {nome}: ")) for volta in range(1, 11)]
         corredores[nome] = tempos
-
-    melhor_corredor, melhor_volta = melhor_volta_tempos(corredores)
-    print(f"A melhor volta da prova foi do corredor {melhor_corredor}, com {melhor_volta} segundos.")
-
+    
+    melhor_corredor, melhor_tempo, melhor_volta = melhor_volta(corredores)
+    print(f"\nMelhor volta: {melhor_corredor}, {melhor_tempo} segundos, na volta {melhor_volta}.")
+    
     volta_media_numero, volta_media = volta_media_rapida(corredores)
-    print(f"\nA volta com a média mais rápida foi a volta {volta_media_numero}, com uma média de {volta_media} segundos.")
+    print(f"\nVolta com a média mais rápida: {volta_media_numero}, com média de {volta_media} segundos.")
+    
+    classificacao = sorted(corredores.items(), key=lambda x: sum(x[1]))
+    print("\nClassificação final em ordem crescente:")
+    for posicao, (corredor, tempos) in enumerate(classificacao, start=1):
+        print(f"{posicao}. {corredor} - Tempo total: {sum(tempos)} segundos")
 
 main()
