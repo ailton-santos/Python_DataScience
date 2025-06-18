@@ -12,8 +12,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
 dados = pd.read_csv('tmsp.csv', encoding='ISO-8859-1', sep=';')
 
 dados
